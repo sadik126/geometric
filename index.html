@@ -30,25 +30,35 @@
                       <h2 class="text-2xl font-extrabold text-center">Triangle</h2>
                       <p class="text-center">Area(A) = 0.5 X b X h</p>
                       <p>
-                        <input class="w-20 px-3 text-xl" placeholder="base" type="text"> 
+                        <input id="base" class="w-20 px-3 text-xl" placeholder="base" type="text"> 
                         <span class="mx-3">cm</span>
-                        <input class="w-20 px-3 text-xl" placeholder="height" type="text"> 
+                        <input id="height" class="w-20 px-3 text-xl" placeholder="height" type="text"> 
                         <span class="mx-3">cm</span>
                       </p>
+                      <p class="text-2xl">Area : <span class="font-extrabold" id="traingle-area"></span>00   cm <sup>2</sup></p>
                       <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                        <button id="area-calculate" class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                   </div>
 
                   <!-- second card  -->
                 <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="./geometry-genius-resources/images/triangle.png" alt="Shoes" /></figure>
+                    <figure><img src="./images/rectangle.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                      <h2 class="card-title">Shoes!</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <h2 class="text-2xl font-extrabold text-center">Rectangle</h2>
+                      <p class="text-center">Area(A) = w X l</p>
+                      <p>
+                        <input id="width" class="w-20 px-3 text-xl" placeholder="width" type="text"> 
+                        <span class="mx-3">cm</span>
+                        <input id="length" class="w-20 px-3 text-xl" placeholder="length" type="text"> 
+                        <span class="mx-3">cm</span>
+                      </p>
+
+                      <p class="text-2xl">Area : <span class="font-extrabold" id="rectangle-area"></span>00   cm <sup>2</sup></p>
+
                       <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                        <button class="btn btn-primary w-full">calculate</button>
                       </div>
                     </div>
                   </div>
@@ -71,6 +81,8 @@
             </div>
         </div>
     </main>
+
+    <script src="./js/area-calculator.js"></script>
     
 </body>
 </html>
