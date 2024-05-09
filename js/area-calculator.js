@@ -22,3 +22,8 @@
 
 
  })
+
+
+ function calculateRect(){
+    console.log('rect')
+ }
