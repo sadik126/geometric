@@ -31,5 +31,9 @@
     const Rectangularlength = document.getElementById('length')
     const length = Rectangularlength.value;
 
-    const area = parseFloat()
+    const area = parseFloat(width) * parseFloat(length)
+
+    const Rectangulararea = document.getElementById('rectangle-area')
+
+    Rectangulararea.innerText = area;
  }
