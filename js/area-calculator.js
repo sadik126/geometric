@@ -25,5 +25,11 @@
 
 
  function calculateRect(){
-    console.log('rect')
+    const Rectangularwidth = document.getElementById('width')
+    const width = Rectangularwidth.value;
+
+    const Rectangularlength = document.getElementById('length')
+    const length = Rectangularlength.value;
+
+    const area = parseFloat()
  }
