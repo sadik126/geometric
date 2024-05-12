@@ -37,3 +37,17 @@
 
     Rectangulararea.innerText = area;
  }
+
+ function calculatepara(){
+   const base = getvalueId('parabase')
+   const height = getvalueId('paraheight')
+
+   console.log(base , height)
+ }
+
+ function getvalueId(fieldId){
+   const inputField = document.getElementById(fieldId)
+   const inputvalueText = inputField.value;
+   const value = parseFloat(inputvalueText)
+   return value;
+ }
