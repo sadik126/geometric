@@ -42,7 +42,9 @@
    const base = getvalueId('parabase')
    const height = getvalueId('paraheight')
 
-   console.log(base , height)
+   const area = base * height;
+
+   console.log(area)
  }
 
  function getvalueId(fieldId){
@@ -50,4 +52,9 @@
    const inputvalueText = inputField.value;
    const value = parseFloat(inputvalueText)
    return value;
+ }
+
+
+ function setInputtext(){
+  
  }
