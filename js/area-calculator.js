@@ -1,11 +1,15 @@
  document.getElementById('area-calculate').addEventListener('click', function(){
 
-  const baseelement = document.getElementById('base');
-  const heightelement = document.getElementById('height');
+  // const baseelement = document.getElementById('base');
+  // const heightelement = document.getElementById('height');
 
-  const base = parseFloat(baseelement.value) ;
+  // const base = parseFloat(baseelement.value) ;
 
-  const height = parseFloat(heightelement.value) ;
+  // const height = parseFloat(heightelement.value) ;
+
+  const base = getvalueId('base')
+
+  const height = getvalueId ('height')
 
   console.log(base , height)
 
@@ -15,9 +19,11 @@
   console.log(area)
 
 
-  const trainglearea = document.getElementById('traingle-area')
+  // const trainglearea = document.getElementById('traingle-area')
 
-  trainglearea.innerText = area;
+  // trainglearea.innerText = area;
+
+  setInputtext('traingle-area', area)
 
 
 
@@ -44,6 +50,8 @@
 
    const area = base * height;
 
+    setInputtext('Parallelogram-area' , area)
+
    console.log(area)
  }
 
@@ -55,6 +63,10 @@
  }
 
 
- function setInputtext(){
-  
+ function setInputtext(elementId , area){
+
+  const element = document.getElementById(elementId)
+
+  element.innerText = area;
+
  }
