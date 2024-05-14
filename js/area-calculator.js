@@ -56,7 +56,22 @@
  }
 
  function calculaterom(){
-  
+  const d1 = getvalueId('d1');
+  const d2 = getvalueId('d2')
+
+  const area = 0.5 * d1 *d2;
+
+  setInputtext('rombos-area' , area)
+ }
+
+
+ function calculatepant (){
+  const p = getvalueId('p')
+  const b = getvalueId('b')
+
+  const area = 0.5 * p * b;
+
+  setInputtext('pantagon-area' , area)
  }
 
  function getvalueId(fieldId){
