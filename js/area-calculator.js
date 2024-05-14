@@ -55,6 +55,10 @@
    console.log(area)
  }
 
+ function calculaterom(){
+  
+ }
+
  function getvalueId(fieldId){
    const inputField = document.getElementById(fieldId)
    const inputvalueText = inputField.value;
