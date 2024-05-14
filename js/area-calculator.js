@@ -74,6 +74,16 @@
   setInputtext('pantagon-area' , area)
  }
 
+ function calculateellips (){
+  const large = getvalueId('large');
+
+  const short = getvalueId('short');
+
+  const area = 3.1416 * large * short;
+
+  setInputtext('ellips-area' , area)
+ }
+
  function getvalueId(fieldId){
    const inputField = document.getElementById(fieldId)
    const inputvalueText = inputField.value;
